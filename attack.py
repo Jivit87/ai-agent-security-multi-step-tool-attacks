@@ -300,7 +300,7 @@ def _load_web_pages() -> list[dict[str, Any]]:
 
 
 def _score_page(page: dict[str, Any]) -> int:
-    content = f"{page.get('title', '')}\n{page.get('content', '')}".lower()
+    content = (page.get("title", "") + "\n" + page.get("content", "")).lower()
     score = 0
     patterns = {
         "secret.txt": 10,
@@ -323,7 +323,7 @@ def _score_page(page: dict[str, Any]) -> int:
 
 
 def _local_reference_score(page: dict[str, Any]) -> int:
-    content = f"{page.get('title', '')}\n{page.get('content', '')}".lower()
+    content = (page.get("title", "") + "\n" + page.get("content", "")).lower()
     patterns = ("secret.txt", "fs.read", "local file", "local configuration", "reference", "dependency")
     return sum(1 for pattern in patterns if pattern in content)
 
