@@ -1,0 +1,20 @@
+{"sink": "http.post", "provenance": "clean", "action": "ALLOW", "guardrail": "ALLOW", "predicate_effect": "payload-ready when clean", "verdict": "PERMITTED"}
+{"sink": "http.post", "provenance": "web", "action": "DENY", "guardrail": "DENY", "predicate_effect": "payload-ready when clean", "verdict": "BLOCKED"}
+{"sink": "http.post", "provenance": "email", "action": "DENY", "guardrail": "DENY", "predicate_effect": "payload-ready when clean", "verdict": "BLOCKED"}
+{"sink": "http.post", "provenance": "file", "action": "ALLOW", "guardrail": "ALLOW", "predicate_effect": "payload-ready when clean", "verdict": "BLOCKED"}
+{"sink": "http.post", "provenance": "mixed", "action": "DENY", "guardrail": "DENY", "predicate_effect": "payload-ready when clean", "verdict": "BLOCKED"}
+{"sink": "fs.write/fs.delete", "provenance": "clean", "action": "DENY", "guardrail": "DENY", "predicate_effect": "protected path blocked", "verdict": "BLOCKED"}
+{"sink": "fs.write/fs.delete", "provenance": "web", "action": "DENY", "guardrail": "DENY", "predicate_effect": "protected path blocked", "verdict": "BLOCKED"}
+{"sink": "fs.write/fs.delete", "provenance": "email", "action": "DENY", "guardrail": "DENY", "predicate_effect": "protected path blocked", "verdict": "BLOCKED"}
+{"sink": "fs.write/fs.delete", "provenance": "file", "action": "DENY", "guardrail": "DENY", "predicate_effect": "protected path blocked", "verdict": "BLOCKED"}
+{"sink": "fs.write/fs.delete", "provenance": "mixed", "action": "DENY", "guardrail": "DENY", "predicate_effect": "protected path blocked", "verdict": "BLOCKED"}
+{"sink": "shell.run", "provenance": "clean", "action": "ALLOW", "guardrail": "ALLOW", "predicate_effect": "needs taint, but taint triggers guardrail", "verdict": "BLOCKED"}
+{"sink": "shell.run", "provenance": "web", "action": "DENY", "guardrail": "DENY", "predicate_effect": "needs taint, but taint triggers guardrail", "verdict": "BLOCKED"}
+{"sink": "shell.run", "provenance": "email", "action": "DENY", "guardrail": "DENY", "predicate_effect": "needs taint, but taint triggers guardrail", "verdict": "BLOCKED"}
+{"sink": "shell.run", "provenance": "file", "action": "ALLOW", "guardrail": "ALLOW", "predicate_effect": "needs taint, but taint triggers guardrail", "verdict": "BLOCKED"}
+{"sink": "shell.run", "provenance": "mixed", "action": "DENY", "guardrail": "DENY", "predicate_effect": "needs taint, but taint triggers guardrail", "verdict": "BLOCKED"}
+{"sink": "email.send", "provenance": "clean", "action": "ALLOW", "guardrail": "ALLOW", "predicate_effect": "clean state required", "verdict": "PERMITTED"}
+{"sink": "email.send", "provenance": "web", "action": "DENY", "guardrail": "DENY", "predicate_effect": "clean state required", "verdict": "BLOCKED"}
+{"sink": "email.send", "provenance": "email", "action": "DENY", "guardrail": "DENY", "predicate_effect": "clean state required", "verdict": "BLOCKED"}
+{"sink": "email.send", "provenance": "file", "action": "ALLOW", "guardrail": "ALLOW", "predicate_effect": "clean state required", "verdict": "BLOCKED"}
+{"sink": "email.send", "provenance": "mixed", "action": "DENY", "guardrail": "DENY", "predicate_effect": "clean state required", "verdict": "BLOCKED"}

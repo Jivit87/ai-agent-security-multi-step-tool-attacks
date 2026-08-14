@@ -1,0 +1,53 @@
+{
+  "backend_availability": [
+    {
+      "available": true,
+      "backend": "deterministic",
+      "reason": null
+    },
+    {
+      "available": false,
+      "backend": "openai",
+      "reason": "RuntimeError: OPENAI_API_KEY must be set when agent selection is 'openai'."
+    },
+    {
+      "available": false,
+      "backend": "gpt_oss",
+      "reason": "RuntimeError: Transformers SDK is not available"
+    },
+    {
+      "available": false,
+      "backend": "gemma",
+      "reason": "RuntimeError: Transformers SDK is not available"
+    },
+    {
+      "available": false,
+      "backend": "gemma_4",
+      "reason": "RuntimeError: Transformers SDK with Gemma 4 support is not available"
+    }
+  ],
+  "env": {
+    "AICOMP_MODEL_NAMES": null,
+    "GEMMA4_MODEL_PATH": null,
+    "GEMMA_GGUF_FILE": null,
+    "GEMMA_GGUF_REPO": null,
+    "GEMMA_MODEL_PATH": null,
+    "GPT_OSS_GGUF_FILE": null,
+    "GPT_OSS_GGUF_REPO": null,
+    "GPT_OSS_MODEL_PATH": null,
+    "HF_HOME": null,
+    "KAGGLE_IS_COMPETITION_RERUN": null,
+    "OPENAI_API_KEY": null
+  },
+  "runtime": {
+    "executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "machine": "arm64",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python_version": "3.14.3",
+    "system": "Darwin"
+  },
+  "torch": {
+    "torch_available": false,
+    "torch_error": "ModuleNotFoundError: No module named 'torch'"
+  }
+}

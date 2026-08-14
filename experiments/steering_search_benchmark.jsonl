@@ -1,0 +1,4 @@
+{"mode": "prompt_bank_only", "backend": "deterministic", "attempts": 48, "replay_valid_rate": 1.0, "unique_cells": 24, "unique_mechanisms": 12, "predicate_count": 0, "severity_sum": 0, "tool_diversity": 5, "deepest": 8}
+{"mode": "graph_only", "backend": "deterministic", "attempts": 60, "replay_valid_rate": 1.0, "unique_cells": 1, "unique_mechanisms": 1, "predicate_count": 0, "severity_sum": 0, "tool_diversity": 1, "deepest": 1}
+{"mode": "steering_aware_search", "backend": "deterministic", "attempts": 60, "replay_valid_rate": 1.0, "unique_cells": 2, "unique_mechanisms": 1, "predicate_count": 0, "severity_sum": 0, "tool_diversity": 1, "deepest": 1}
+{"mode": "steering_plus_mutation", "backend": "deterministic", "attempts": 60, "replay_valid_rate": 1.0, "unique_cells": 3, "unique_mechanisms": 1, "predicate_count": 0, "severity_sum": 0, "tool_diversity": 1, "deepest": 1}
